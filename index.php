@@ -9,7 +9,7 @@
         <title>Watch Turner Classic Movies on TCM</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -42,7 +42,7 @@
                 </ul>
             </div>
             <div>
-                <h1>The Wizard of Oz</h1>
+                <h1 class="white">The Wizard of Oz</h1>
                 <div>1h 37m | Aug 12, 1939 | <img src=""></div>
             </div>
         </header>
