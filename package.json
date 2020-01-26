@@ -1,0 +1,23 @@
+{
+  "name": "tcm",
+  "version": "1.0.0",
+  "description": "Turner Classic Movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccampos/tcm.git"
+  },
+  "keywords": [
+    "classic",
+    "movies"
+  ],
+  "author": "Claudio Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccampos/tcm/issues"
+  },
+  "homepage": "https://github.com/ccampos/tcm#readme"
+}
