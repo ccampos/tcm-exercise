@@ -1,0 +1,101 @@
+.black {
+  color: #2A2A2A; }
+
+.light_grey {
+  color: #F5F5F5; }
+
+.gold {
+  color: #E3C880; }
+
+.white {
+  color: #FFFFFF; }
+
+.dark_grey {
+  color: #353535; }
+
+.greyish_brown {
+  color: #414141; }
+
+.denim {
+  color: #377570; }
+
+.seafoam_blue {
+  color: #5CC3BB; }
+
+.brown_grey {
+  color: #A0A0A0; }
+
+header {
+  background-color: #353535; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 32px; }
+  body.heavy {
+    font-weight: bold; }
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 1px; }
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  line-height: 56px; }
+
+.subtitle {
+  font-family: "Lato", sans-serif;
+  font-weight: bold; }
+  .subtitle.large {
+    font-size: 32px;
+    line-height: 40px; }
+  .subtitle.medium {
+    font-size: 24px;
+    line-height: 32px; }
+  .subtitle.small {
+    font-size: 16px;
+    line-height: 24px; }
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  line-height: 32px; }
+  h3.tooltip {
+    color: #FFFFFF; }
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  line-height: 24px; }
+
+h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+  h5.heavy {
+    font-weight: bold; }
+  h5.link {
+    line-height: 32px; }
+
+h6 {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  line-height: 16px; }
+
+a {
+  font-family: "Lato", sans-serif; }
+  a.primary {
+    font-size: 16px;
+    line-height: 24px; }
+  a.secondary {
+    font-size: 14px;
+    line-height: 16px; }
+
+.tag {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px; }
