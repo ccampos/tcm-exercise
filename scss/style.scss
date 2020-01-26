@@ -1,0 +1,135 @@
+$black: #2A2A2A;
+$light_grey: #F5F5F5;
+$gold: #E3C880;
+$white: #FFFFFF;
+$dark_grey: #353535;
+$greyish_brown: #414141;
+$denim: #377570;
+$seafoam_blue: #5CC3BB;
+$brown_grey: #A0A0A0;
+
+$lato: 'Lato', sans-serif;
+$playfair_display: 'Playfair Display', serif;
+
+.black {
+    color: $black;
+}
+.light_grey {
+    color: $light_grey;
+}
+.gold {
+    color: $gold;
+}
+.white {
+    color: $white;
+}
+.dark_grey {
+    color: $dark_grey;
+}
+.greyish_brown {
+    color: $greyish_brown;
+}
+.denim {
+    color: $denim;
+}
+.seafoam_blue {
+    color: $seafoam_blue;
+}
+.brown_grey {
+    color: $brown_grey;
+}
+
+header {
+    background-color: $dark_grey;
+}
+
+body {
+    font-family: $lato;
+    font-size: 20px;
+    line-height: 32px;
+    &.heavy {
+        font-weight: bold;
+    }
+}
+
+h1 {
+    font-family: $playfair_display;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: $playfair_display;
+    font-size: 40px;
+    line-height: 56px;
+}
+
+.subtitle {
+    font-family: $lato;
+    font-weight: bold;
+    &.large {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    &.medium {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    &.small {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+h3 {
+    font-family: $playfair_display;
+    font-size: 28px;
+    line-height: 32px;
+    &.tooltip {
+        color: $white;
+    }
+}
+
+h4 {
+    font-family: $playfair_display;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h5 {
+    font-family: $lato;
+    font-size: 16px;
+    line-height: 24px;
+    &.heavy {
+        font-weight: bold;
+    }
+    &.link {
+        line-height: 32px;
+    }
+}
+
+h6 {
+    font-family: $lato;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+a {
+    font-family: $lato;
+    &.primary {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &.secondary {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.tag {
+    font-family: $lato;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+}
