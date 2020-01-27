@@ -40,10 +40,13 @@ $playfair_display: 'Playfair Display', serif;
 }
 
 header {
-    background-color: $dark_grey;
+    background-color: $black;
 }
 
 body {
+    margin: 0;
+    min-width: 1280px;
+
     font-family: $lato;
     font-size: 20px;
     line-height: 32px;
@@ -117,14 +120,7 @@ h6 {
 
 a {
     font-family: $lato;
-    &.primary {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    &.secondary {
-        font-size: 14px;
-        line-height: 16px;
-    }
+    text-decoration: none;
 }
 
 .tag {
@@ -132,4 +128,83 @@ a {
     font-size: 12px;
     font-weight: bold;
     line-height: 16px;
+}
+
+nav {
+    text-transform: uppercase;
+    ul {
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+        display: flex;
+    }
+    li {
+        flex-grow: 1;
+    }
+    &#primary {
+        padding: 29px 0 11px 40px;
+        word-spacing: 5px;
+        #tcm-logo {
+            width: 113px;
+
+            position: relative;
+            top: -5px;
+        }
+        a {
+            color: $white;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        input[type=search] {
+            color: $white;
+            font-size: 16px;
+            width: 398px;
+            height: 38px;
+            padding: 0 20px;
+
+            border-style: solid;
+            border-width: 1px;
+            border-color: $greyish_brown;
+            border-radius: 1px;
+            background-color: #303030;
+
+            box-sizing: border-box;
+            -webkit-appearance: none;
+
+            position: relative;
+            top: -4px;
+        }
+        .fa-search {
+            color: $white;
+
+            position: relative;
+            left: -50px;
+            top: -1px;
+        }
+        .fa-chevron-down {
+            font-size: 15px;
+            color: $white;
+
+            position: relative;
+            top: 1px;
+        }
+    }
+    &#secondary {
+        padding: 4px 0 12px 40px;
+        border-style: solid;
+        border-width: 1px 0;
+        border-color: $greyish_brown;
+        a {
+            font-size: 14px;
+            line-height: 16px;
+            color: $brown_grey;
+        }
+        .fa-ellipsis-h {
+            color: $brown_grey;
+
+            position: relative;
+            top: 3px;
+        }
+    }
 }

@@ -26,9 +26,11 @@
   color: #A0A0A0; }
 
 header {
-  background-color: #353535; }
+  background-color: #2A2A2A; }
 
 body {
+  margin: 0;
+  min-width: 1280px;
   font-family: "Lato", sans-serif;
   font-size: 20px;
   line-height: 32px; }
@@ -86,16 +88,70 @@ h6 {
   line-height: 16px; }
 
 a {
-  font-family: "Lato", sans-serif; }
-  a.primary {
-    font-size: 16px;
-    line-height: 24px; }
-  a.secondary {
-    font-size: 14px;
-    line-height: 16px; }
+  font-family: "Lato", sans-serif;
+  text-decoration: none; }
 
 .tag {
   font-family: "Lato", sans-serif;
   font-size: 12px;
   font-weight: bold;
   line-height: 16px; }
+
+nav {
+  text-transform: uppercase; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex; }
+  nav li {
+    flex-grow: 1; }
+  nav#primary {
+    padding: 29px 0 11px 40px;
+    word-spacing: 5px; }
+    nav#primary #tcm-logo {
+      width: 113px;
+      position: relative;
+      top: -5px; }
+    nav#primary a {
+      color: #FFFFFF;
+      font-size: 16px;
+      line-height: 24px; }
+    nav#primary input[type=search] {
+      color: #FFFFFF;
+      font-size: 16px;
+      width: 398px;
+      height: 38px;
+      padding: 0 20px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #414141;
+      border-radius: 1px;
+      background-color: #303030;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      position: relative;
+      top: -4px; }
+    nav#primary .fa-search {
+      color: #FFFFFF;
+      position: relative;
+      left: -50px;
+      top: -1px; }
+    nav#primary .fa-chevron-down {
+      font-size: 15px;
+      color: #FFFFFF;
+      position: relative;
+      top: 1px; }
+  nav#secondary {
+    padding: 4px 0 12px 40px;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #414141; }
+    nav#secondary a {
+      font-size: 14px;
+      line-height: 16px;
+      color: #A0A0A0; }
+    nav#secondary .fa-ellipsis-h {
+      color: #A0A0A0;
+      position: relative;
+      top: 3px; }
