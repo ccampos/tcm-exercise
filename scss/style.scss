@@ -10,6 +10,10 @@ $brown_grey: #A0A0A0;
 
 $lato: 'Lato', sans-serif;
 $playfair_display: 'Playfair Display', serif;
+$pt_serif: 'PT Serif', serif;
+$volkhorn: 'Volkhorn', serif;
+
+$film_details_spacing: 15px;
 
 .black {
     color: $black;
@@ -39,10 +43,6 @@ $playfair_display: 'Playfair Display', serif;
     color: $brown_grey;
 }
 
-header {
-    background-color: $black;
-}
-
 body {
     margin: 0;
     min-width: 1280px;
@@ -53,6 +53,124 @@ body {
     &.heavy {
         font-weight: bold;
     }
+}
+
+.primary {
+    a {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+nav {
+    text-transform: uppercase;
+    ul {
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+    }
+    li {
+        flex-grow: 1;
+    }
+    &.primary {
+        padding: 29px 0 11px 40px;
+        word-spacing: 5px;
+        #tcm-logo {
+            width: 113px;
+
+            position: relative;
+            top: -5px;
+        }
+        a {
+            color: $white;
+        }
+        input[type=search] {
+            color: $white;
+            font-size: 16px;
+            width: 398px;
+            height: 38px;
+            padding: 0 20px;
+
+            border-style: solid;
+            border-width: 1px;
+            border-color: $greyish_brown;
+            border-radius: 1px;
+            background-color: #303030;
+
+            box-sizing: border-box;
+            -webkit-appearance: none;
+
+            position: relative;
+            top: -4px;
+        }
+        .fa-search {
+            color: $white;
+
+            position: relative;
+            left: -50px;
+            top: -1px;
+        }
+        .fa-chevron-down {
+            font-size: 15px;
+            color: $white;
+            cursor: pointer;
+
+            position: relative;
+            top: 1px;
+        }
+    }
+    &#secondary {
+        padding: 4px 0 12px 40px;
+        border-style: solid;
+        border-width: 1px 0;
+        border-color: $greyish_brown;
+        a {
+            font-size: 14px;
+            line-height: 16px;
+            color: $brown_grey;
+        }
+        .fa-ellipsis-h {
+            color: $brown_grey;
+
+            position: relative;
+            top: 3px;
+        }
+    }
+}
+
+header {
+    background-color: $black;
+
+    nav {
+        ul {
+            display: flex;
+        }
+    }
+
+    & > div {
+        padding: 0 0 5px 39px;
+        #film_duration {
+            margin-right: $film_details_spacing;
+        }
+        #film_date {
+            margin: 0 $film_details_spacing;
+        }
+        .film_rating {
+            margin-left: $film_details_spacing;
+        }
+    }
+}
+
+.film_rating {
+    font-family: $volkhorn;
+    font-weight: bold;
+
+    border: 1px solid;
+}
+
+h1, h2 {
+    margin-bottom: 16px;
 }
 
 h1 {
@@ -98,12 +216,14 @@ h4 {
     font-family: $playfair_display;
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 6px;
 }
 
 h5 {
     font-family: $lato;
     font-size: 16px;
     line-height: 24px;
+    font-weight: normal;
     &.heavy {
         font-weight: bold;
     }
@@ -115,6 +235,7 @@ h5 {
 h6 {
     font-family: $lato;
     font-size: 12px;
+    font-weight: normal;
     line-height: 16px;
 }
 
@@ -130,81 +251,168 @@ a {
     line-height: 16px;
 }
 
-nav {
-    text-transform: uppercase;
-    ul {
-        margin: 0;
-        padding: 0;
-
-        list-style-type: none;
+main {
+    display: flex;
+    nav, > div {
         display: flex;
+        flex-direction: column;
     }
-    li {
-        flex-grow: 1;
+    > div {
+        width: 100%;
+        padding: 96px 0 0 48px;
     }
-    &#primary {
-        padding: 29px 0 11px 40px;
-        word-spacing: 5px;
-        #tcm-logo {
-            width: 113px;
-
-            position: relative;
-            top: -5px;
-        }
+    .primary {
         a {
-            color: $white;
-            font-size: 16px;
-            line-height: 24px;
+            color: $seafoam_blue;
         }
-        input[type=search] {
-            color: $white;
-            font-size: 16px;
-            width: 398px;
-            height: 38px;
-            padding: 0 20px;
-
-            border-style: solid;
-            border-width: 1px;
-            border-color: $greyish_brown;
-            border-radius: 1px;
-            background-color: #303030;
-
+    }
+    nav {
+        width: 404px;
+        background-color: $light_grey;
+        ul {
+            li {
+                margin-bottom: 16px;
+            }
+        }
+        &.primary {
+            padding: 57px 0 11px 40px;
             box-sizing: border-box;
-            -webkit-appearance: none;
-
-            position: relative;
-            top: -4px;
+            a {
+                color: $black;
+            }
         }
-        .fa-search {
-            color: $white;
+    }
+    section {
+        position: relative;
+        margin-bottom: 12px;
+        .fa-arrow-right {
+            font-size: 12px;
+            color: $seafoam_blue;
 
             position: relative;
-            left: -50px;
             top: -1px;
+            left: 6px;
         }
-        .fa-chevron-down {
-            font-size: 15px;
-            color: $white;
-
+        .primary {
+            position: absolute;
+            top: 75px;
+            right: 54px;
+        }
+        &#cast .row {
+            height: 78px;
+            margin-top: 24px;
             position: relative;
-            top: 1px;
+            div {
+                width: 30%;
+                height: 70px;
+                padding: 10px;
+
+                position: absolute;
+                top: 0;
+                &:hover {
+                    box-shadow:  0 -1em 1em rgba(0,0,0,0.1), 
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+                    cursor: pointer;
+                }
+            }
+            div:nth-child(2) {
+                left: 33%;
+            }
+            div:nth-child(3) {
+                left: 66%;
+            }
+
+            h4, h6 {
+                margin-top: 0;
+            }
+        }
+        &#photos_videos {
+            #container {
+                margin: 50px 54px 0 0;
+                padding: 0 0 0 0;
+                font-size: 0;
+                position: relative;
+
+
+                div {
+                    display: inline-block;
+                    width: 48%;
+                    margin: 0 1% 1% 0;
+                    box-sizing: border-box;
+
+                    &#main {
+                        min-height: 440px;
+                        margin-bottom: 0;
+                        background-image: url(http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i49/BUDABBOTTANDLOUCOSTELLOINHOLLYWOOD_00132458_1213x1574_102020061620.JPG);
+                        background-size: cover;
+                        background-position: top 30% left 50%;
+
+                        &:hover {
+                            background-color: $black;
+                            opacity: 0.5;
+                            cursor: pointer;
+                        }
+                    }
+                    .block {
+                        display: block;
+                        width: 50%;
+                        height: 49%;
+
+                        position: absolute;
+                        top: 0;
+
+                        &:nth-child(2) {
+                            top: 51%;
+                        }
+                        #top_left {
+                            background-image: url(http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i49/BUDABBOTTANDLOUCOSTELLOINHOLLYWOOD_00315781_1127x1372_102020061620.JPG);
+                        }
+                        #top_right {
+                            background-image: url(http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i49/BUDABBOTTANDLOUCOSTELLOINHOLLYWOOD_00315768_1365x1134_102020061620.JPG);
+                        }
+                        #bottom_left {
+                            background-image: url(http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i49/BUDABBOTTANDLOUCOSTELLOINHOLLYWOOD_00132564_768x512_102020061621.JPG);
+                        }
+                        #bottom_right {
+                            background-image: url(http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i49/BUDABBOTTANDLOUCOSTELLOINHOLLYWOOD_00132547_768x512_102020061621.JPG);
+                        }
+                        div {
+                            height: 100%;
+                            background-size: cover;
+                            background-position: top 30% left 50%;
+                            &:hover {
+                                background-color: $black;
+                                opacity: 0.5;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &#film_details {
+            font-size: 16px;
+            .table {
+                width: 100%;
+                display: table;
+                .row {
+                    display: table-row;
+                    :first-child {
+                        font-weight: bold;
+                    }
+                    div {
+                        width: 20%;
+                        display: table-cell;
+                        padding-right: 5%;
+                    }
+                }
+            }
         }
     }
-    &#secondary {
-        padding: 4px 0 12px 40px;
-        border-style: solid;
-        border-width: 1px 0;
-        border-color: $greyish_brown;
-        a {
-            font-size: 14px;
-            line-height: 16px;
-            color: $brown_grey;
-        }
-        .fa-ellipsis-h {
-            color: $brown_grey;
-
-            position: relative;
-            top: 3px;
-        }
-    }
+}
+.emphasis {
+    width: 32px;
+    height: 4px;
+    background-color: $gold;
 }

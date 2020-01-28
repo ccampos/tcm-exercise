@@ -25,9 +25,6 @@
 .brown_grey {
   color: #A0A0A0; }
 
-header {
-  background-color: #2A2A2A; }
-
 body {
   margin: 0;
   min-width: 1280px;
@@ -36,6 +33,88 @@ body {
   line-height: 32px; }
   body.heavy {
     font-weight: bold; }
+
+.primary a {
+  font-size: 16px;
+  line-height: 24px; }
+
+nav {
+  text-transform: uppercase; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  nav li {
+    flex-grow: 1; }
+  nav.primary {
+    padding: 29px 0 11px 40px;
+    word-spacing: 5px; }
+    nav.primary #tcm-logo {
+      width: 113px;
+      position: relative;
+      top: -5px; }
+    nav.primary a {
+      color: #FFFFFF; }
+    nav.primary input[type=search] {
+      color: #FFFFFF;
+      font-size: 16px;
+      width: 398px;
+      height: 38px;
+      padding: 0 20px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #414141;
+      border-radius: 1px;
+      background-color: #303030;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      position: relative;
+      top: -4px; }
+    nav.primary .fa-search {
+      color: #FFFFFF;
+      position: relative;
+      left: -50px;
+      top: -1px; }
+    nav.primary .fa-chevron-down {
+      font-size: 15px;
+      color: #FFFFFF;
+      cursor: pointer;
+      position: relative;
+      top: 1px; }
+  nav#secondary {
+    padding: 4px 0 12px 40px;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #414141; }
+    nav#secondary a {
+      font-size: 14px;
+      line-height: 16px;
+      color: #A0A0A0; }
+    nav#secondary .fa-ellipsis-h {
+      color: #A0A0A0;
+      position: relative;
+      top: 3px; }
+
+header {
+  background-color: #2A2A2A; }
+  header nav ul {
+    display: flex; }
+  header > div {
+    padding: 0 0 5px 39px; }
+    header > div #film_duration {
+      margin-right: 15px; }
+    header > div #film_date {
+      margin: 0 15px; }
+    header > div .film_rating {
+      margin-left: 15px; }
+
+.film_rating {
+  font-family: "Volkhorn", serif;
+  font-weight: bold;
+  border: 1px solid; }
+
+h1, h2 {
+  margin-bottom: 16px; }
 
 h1 {
   font-family: "Playfair Display", serif;
@@ -71,12 +150,14 @@ h3 {
 h4 {
   font-family: "Playfair Display", serif;
   font-size: 18px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin-bottom: 6px; }
 
 h5 {
   font-family: "Lato", sans-serif;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  font-weight: normal; }
   h5.heavy {
     font-weight: bold; }
   h5.link {
@@ -85,6 +166,7 @@ h5 {
 h6 {
   font-family: "Lato", sans-serif;
   font-size: 12px;
+  font-weight: normal;
   line-height: 16px; }
 
 a {
@@ -97,61 +179,117 @@ a {
   font-weight: bold;
   line-height: 16px; }
 
-nav {
-  text-transform: uppercase; }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex; }
-  nav li {
-    flex-grow: 1; }
-  nav#primary {
-    padding: 29px 0 11px 40px;
-    word-spacing: 5px; }
-    nav#primary #tcm-logo {
-      width: 113px;
+main {
+  display: flex; }
+  main nav, main > div {
+    display: flex;
+    flex-direction: column; }
+  main > div {
+    width: 100%;
+    padding: 96px 0 0 48px; }
+  main .primary a {
+    color: #5CC3BB; }
+  main nav {
+    width: 404px;
+    background-color: #F5F5F5; }
+    main nav ul li {
+      margin-bottom: 16px; }
+    main nav.primary {
+      padding: 57px 0 11px 40px;
+      box-sizing: border-box; }
+      main nav.primary a {
+        color: #2A2A2A; }
+  main section {
+    position: relative;
+    margin-bottom: 12px; }
+    main section .fa-arrow-right {
+      font-size: 12px;
+      color: #5CC3BB;
       position: relative;
-      top: -5px; }
-    nav#primary a {
-      color: #FFFFFF;
-      font-size: 16px;
-      line-height: 24px; }
-    nav#primary input[type=search] {
-      color: #FFFFFF;
-      font-size: 16px;
-      width: 398px;
-      height: 38px;
-      padding: 0 20px;
-      border-style: solid;
-      border-width: 1px;
-      border-color: #414141;
-      border-radius: 1px;
-      background-color: #303030;
-      box-sizing: border-box;
-      -webkit-appearance: none;
-      position: relative;
-      top: -4px; }
-    nav#primary .fa-search {
-      color: #FFFFFF;
-      position: relative;
-      left: -50px;
-      top: -1px; }
-    nav#primary .fa-chevron-down {
-      font-size: 15px;
-      color: #FFFFFF;
-      position: relative;
-      top: 1px; }
-  nav#secondary {
-    padding: 4px 0 12px 40px;
-    border-style: solid;
-    border-width: 1px 0;
-    border-color: #414141; }
-    nav#secondary a {
-      font-size: 14px;
-      line-height: 16px;
-      color: #A0A0A0; }
-    nav#secondary .fa-ellipsis-h {
-      color: #A0A0A0;
-      position: relative;
-      top: 3px; }
+      top: -1px;
+      left: 6px; }
+    main section .primary {
+      position: absolute;
+      top: 75px;
+      right: 54px; }
+    main section#cast .row {
+      height: 78px;
+      margin-top: 24px;
+      position: relative; }
+      main section#cast .row div {
+        width: 30%;
+        height: 70px;
+        padding: 10px;
+        position: absolute;
+        top: 0; }
+        main section#cast .row div:hover {
+          box-shadow: 0 -1em 1em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+          cursor: pointer; }
+      main section#cast .row div:nth-child(2) {
+        left: 33%; }
+      main section#cast .row div:nth-child(3) {
+        left: 66%; }
+      main section#cast .row h4, main section#cast .row h6 {
+        margin-top: 0; }
+    main section#photos_videos #container {
+      margin: 50px 54px 0 0;
+      padding: 0 0 0 0;
+      font-size: 0;
+      position: relative; }
+      main section#photos_videos #container div {
+        display: inline-block;
+        width: 48%;
+        margin: 0 1% 1% 0;
+        box-sizing: border-box; }
+        main section#photos_videos #container div#main {
+          min-height: 440px;
+          margin-bottom: 0;
+          background-image: url(http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i49/BUDABBOTTANDLOUCOSTELLOINHOLLYWOOD_00132458_1213x1574_102020061620.JPG);
+          background-size: cover;
+          background-position: top 30% left 50%; }
+          main section#photos_videos #container div#main:hover {
+            background-color: #2A2A2A;
+            opacity: 0.5;
+            cursor: pointer; }
+        main section#photos_videos #container div .block {
+          display: block;
+          width: 50%;
+          height: 49%;
+          position: absolute;
+          top: 0; }
+          main section#photos_videos #container div .block:nth-child(2) {
+            top: 51%; }
+          main section#photos_videos #container div .block #top_left {
+            background-image: url(http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i49/BUDABBOTTANDLOUCOSTELLOINHOLLYWOOD_00315781_1127x1372_102020061620.JPG); }
+          main section#photos_videos #container div .block #top_right {
+            background-image: url(http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i49/BUDABBOTTANDLOUCOSTELLOINHOLLYWOOD_00315768_1365x1134_102020061620.JPG); }
+          main section#photos_videos #container div .block #bottom_left {
+            background-image: url(http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i49/BUDABBOTTANDLOUCOSTELLOINHOLLYWOOD_00132564_768x512_102020061621.JPG); }
+          main section#photos_videos #container div .block #bottom_right {
+            background-image: url(http://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i49/BUDABBOTTANDLOUCOSTELLOINHOLLYWOOD_00132547_768x512_102020061621.JPG); }
+          main section#photos_videos #container div .block div {
+            height: 100%;
+            background-size: cover;
+            background-position: top 30% left 50%; }
+            main section#photos_videos #container div .block div:hover {
+              background-color: #2A2A2A;
+              opacity: 0.5;
+              cursor: pointer; }
+    main section#film_details {
+      font-size: 16px; }
+      main section#film_details .table {
+        width: 100%;
+        display: table; }
+        main section#film_details .table .row {
+          display: table-row; }
+          main section#film_details .table .row :first-child {
+            font-weight: bold; }
+          main section#film_details .table .row div {
+            width: 20%;
+            display: table-cell;
+            padding-right: 5%; }
+
+.emphasis {
+  width: 32px;
+  height: 4px;
+  background-color: #E3C880; }
