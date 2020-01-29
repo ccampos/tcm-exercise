@@ -239,7 +239,7 @@ main {
       main section#photos_videos #container div {
         display: inline-block;
         width: 48%;
-        margin: 0 1% 1% 0;
+        margin: 0 5px 5px 0;
         box-sizing: border-box; }
         main section#photos_videos #container div#main {
           min-height: 440px;
@@ -277,17 +277,162 @@ main {
               cursor: pointer; }
     main section#film_details {
       font-size: 16px; }
-      main section#film_details .table {
+      main section#film_details table {
         width: 100%;
-        display: table; }
-        main section#film_details .table .row {
-          display: table-row; }
-          main section#film_details .table .row :first-child {
-            font-weight: bold; }
-          main section#film_details .table .row div {
-            width: 20%;
-            display: table-cell;
-            padding-right: 5%; }
+        margin-top: 25px; }
+        main section#film_details table tr td:first-child {
+          font-weight: bold; }
+        main section#film_details table tr td {
+          width: 20%;
+          padding: 0 5% 5px 0;
+          vertical-align: top; }
+          main section#film_details table tr td a {
+            color: #2A2A2A;
+            text-decoration: underline; }
+      main section#film_details h3 {
+        margin-top: 31px; }
+    main section#trending_on_tcm #programming {
+      margin-top: 31px;
+      display: flex; }
+      main section#trending_on_tcm #programming .program {
+        padding: 10px 0 10px 0;
+        margin-right: auto; }
+        main section#trending_on_tcm #programming .program div {
+          width: 275px;
+          height: 156px;
+          margin: 0 10px 0 10px; }
+          main section#trending_on_tcm #programming .program div:nth-child(2) {
+            height: 132px; }
+          main section#trending_on_tcm #programming .program div h6 {
+            margin-top: 16px;
+            margin-bottom: 0;
+            padding: 5px;
+            background-color: #F5F5F5;
+            display: inline-block; }
+          main section#trending_on_tcm #programming .program div h4 {
+            margin-top: 7px; }
+        main section#trending_on_tcm #programming .program:nth-child(1) div:first-child {
+          background-image: url(https://s3.drafthouse.com/images/made/vlcsnap-2013-12-22-20h37m41s120_1050_591_81_s_c1.jpg);
+          background-size: cover; }
+        main section#trending_on_tcm #programming .program:nth-child(2) div:first-child {
+          background-image: url(https://miro.medium.com/max/678/1*79RDVkYe_fw0gd616TPI8A.jpeg);
+          background-size: cover; }
+        main section#trending_on_tcm #programming .program:nth-child(3) div:first-child {
+          background-image: url(https://attractionsmagazine.com/wp-content/uploads/2016/12/The-Princess-Bride-featured.jpg);
+          background-size: cover; }
+        main section#trending_on_tcm #programming .program:hover {
+          box-shadow: 0 -1em 1em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+          cursor: pointer; }
+    main section#introductory_offer {
+      margin: 71px 12px 2px 0;
+      padding: 20px 2px 0 0;
+      position: relative; }
+      main section#introductory_offer .container {
+        width: 98%;
+        height: 435px;
+        box-sizing: border-box;
+        box-shadow: 0 -1em 1em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3); }
+        main section#introductory_offer .container div {
+          display: inline-block;
+          box-sizing: border-box; }
+          main section#introductory_offer .container div.image {
+            width: 25%;
+            height: 372px;
+            margin: 34px 100px;
+            background-image: url(https://thegoldengirlblog.com/wp-content/uploads/2017/10/movie-night-in-6.jpg);
+            background-size: cover; }
+          main section#introductory_offer .container div:nth-child(2) {
+            position: absolute; }
+          main section#introductory_offer .container div.text {
+            width: 48%; }
+            main section#introductory_offer .container div.text p {
+              font-size: 17px; }
+            main section#introductory_offer .container div.text .primary {
+              position: static; }
+          main section#introductory_offer .container div h6 {
+            margin-top: 32px;
+            margin-bottom: 0;
+            padding: 5px;
+            background-color: #F5F5F5;
+            display: inline-block; }
+      main section#introductory_offer .emphasis.horizontal {
+        width: 160px;
+        position: absolute;
+        top: 0;
+        right: 0; }
+      main section#introductory_offer .emphasis.vertical {
+        width: 4px;
+        height: 64px;
+        position: absolute;
+        top: 0;
+        right: 0; }
+
+footer {
+  margin-top: 114px;
+  height: 321px;
+  position: relative; }
+  footer > div {
+    display: inline-block; }
+  footer #sign_up {
+    width: 37.2%;
+    padding: 10px 10px 0 0;
+    position: relative; }
+    footer #sign_up .container {
+      width: 96%;
+      height: 286px;
+      padding: 47px 65px;
+      color: #FFFFFF;
+      background-color: #353535;
+      text-align: center;
+      box-sizing: border-box;
+      position: absolute;
+      top: 21px; }
+      footer #sign_up .container .primary a {
+        color: #5CC3BB; }
+      footer #sign_up .container .primary .fa-arrow-right {
+        font-size: 12px;
+        color: #5CC3BB;
+        position: relative;
+        top: -1px;
+        left: 6px; }
+      footer #sign_up .container h5 {
+        margin-bottom: 11px; }
+    footer #sign_up .emphasis.horizontal {
+      width: 160px;
+      position: absolute;
+      top: 0;
+      right: 0; }
+    footer #sign_up .emphasis.vertical {
+      width: 4px;
+      height: 64px;
+      position: absolute;
+      top: 0;
+      right: 0; }
+  footer #links {
+    width: 63.6%;
+    height: 217px;
+    display: flex;
+    box-shadow: 0 -0.1em 0.7em rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+    footer #links ul {
+      width: 27%;
+      padding-top: 21px;
+      list-style-type: none; }
+      footer #links ul li h5 {
+        text-transform: uppercase;
+        margin: 0 0 16px 0; }
+        footer #links ul li h5 a {
+          color: #2A2A2A; }
+    footer #links div {
+      margin: 36px 0 0 52px; }
+      footer #links div a {
+        color: #A0A0A0;
+        padding-right: 20px; }
+
+#copyright {
+  padding-left: 40px; }
 
 .emphasis {
   width: 32px;
