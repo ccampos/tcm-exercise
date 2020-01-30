@@ -452,3 +452,12 @@ footer {
   width: 100px;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+#about {
+  font-size: 16px; }
+  #about table {
+    margin-top: 25px; }
+    #about table tr td:first-child {
+      font-weight: bold; }
+    #about table tr td {
+      padding: 0 30px 10px 0; }

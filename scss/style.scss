@@ -643,3 +643,18 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+#about {
+    font-size: 16px;
+    table {
+        margin-top: 25px;
+        tr {
+            td:first-child {
+                font-weight: bold;
+            }
+            td {
+                padding: 0 30px 10px 0;
+            }
+        }
+    }
+}
