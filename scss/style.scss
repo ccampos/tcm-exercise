@@ -141,15 +141,22 @@ nav {
 
 header {
     background-color: $black;
+    min-height: 338px;
+    height: 569px;
 
+    position: relative;
     nav {
         ul {
             display: flex;
         }
     }
 
-    & > div {
+    > div {
+        width: 31%;
         padding: 0 0 5px 39px;
+
+        position: absolute;
+        bottom: 0;
         #film_duration {
             margin-right: $film_details_spacing;
         }
@@ -159,6 +166,17 @@ header {
         .film_rating {
             margin-left: $film_details_spacing;
         }
+    }
+    > .image {
+        width: 785px;
+        height: 458px;
+
+        position: absolute;
+        right: 0;
+        bottom: -65px;
+
+        background-image: url(https://cals.org/wp-content/uploads/2019/08/wizard-03.jpg);
+        background-size: cover;
     }
 }
 
@@ -277,8 +295,18 @@ main {
         &.primary {
             padding: 57px 0 11px 40px;
             box-sizing: border-box;
-            a {
-                color: $black;
+            li {
+                &:first-child {
+                    a {
+                        border-color: $seafoam_blue;
+                    }
+                }
+                a {
+                    color: $black;
+                    border-left-style: solid;
+                    padding-left: 15px;
+                    border-color: $light_grey;
+                }
             }
         }
     }
@@ -623,4 +651,9 @@ footer {
     width: 32px;
     height: 4px;
     background-color: $gold;
+}
+.truncate {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

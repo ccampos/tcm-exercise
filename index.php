@@ -55,11 +55,11 @@
             </ul>
         </nav>
         <div>
-            <h1 class="white">The Wizard of Oz</h1>
+            <h1 class="title white">The Wizard of Oz</h1>
             <div class="emphasis"></div>
-            <h5 class="white"><span id="film_duration">1h 37m</span>|<span id="film_date">Aug 12, 1939</span>|<span
-                    class="film_rating">PG</span></h5>
+            <h5 class="white"><span id="film_duration">1h 37m</span>|<span id="film_date">Aug 12, 1939</span>|<span class="film_rating">PG</span></h5>
         </div>
+        <div class="image"></div>
     </header>
     <main>
         <nav class="primary">
@@ -77,46 +77,17 @@
             </ul>
         </nav>
         <div>
-            <section>
+            <section id="synopsis">
                 <h2>Brief Synopsis</h2>
                 <div class="emphasis"></div>
-                <p>A Kansas farm girl dreams herself into a magical land where she must fight a wicked witch to escape.
+                <p>
+                    A Kansas farm girl dreams herself into a magical land where she must fight a wicked witch to escape.
                 </p>
                 <div class="primary"><a href="#">READ MORE</a><i class="fas fa-arrow-right"></i></div>
             </section>
             <section id="cast">
                 <h2>Cast &amp; Crew</h2>
                 <div class="emphasis"></div>
-                <div class="row">
-                    <div>
-                        <h4>Judy Garland</h4>
-                        <h6>Dorothy</h6>
-                    </div>
-                    <div>
-                        <h4>Frank Morgan</h4>
-                        <h6>Professor Marvel [/The Wizard of Oz/Doorkeeper of Emerald City/The coach driver/Wizard\'s
-                            doorkeeper]</h6>
-                    </div>
-                    <div>
-                        <h4>Ray Bolger</h4>
-                        <h6>"Hunk" The Scarecrow</h6>
-                    </div>
-                </div>
-                <div class="row">
-                    <div>
-                        <h4>Judy Garland</h4>
-                        <h6>Dorothy</h6>
-                    </div>
-                    <div>
-                        <h4>Frank Morgan</h4>
-                        <h6>Professor Marvel [/The Wizard of Oz/Doorkeeper of Emerald City/The coach driver/Wizard\'s
-                            doorkeeper]</h6>
-                    </div>
-                    <div>
-                        <h4>Ray Bolger</h4>
-                        <h6>"Hunk" The Scarecrow</h6>
-                    </div>
-                </div>
                 <div class="primary"><a href="#">READ MORE</a><i class="fas fa-arrow-right"></i></div>
             </section>
             <section id="photos_videos">
@@ -299,6 +270,7 @@
     <div id="copyright">
         <h6>&copy; 2020 Turner Classic Movies, Inc. A WarnerMedia Company. All Rights Reserved.</h6>
     </div>
-    <script src="" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" async defer></script>
+    <script src="scripts/main.js" async defer></script>
 </body>
 </html>
