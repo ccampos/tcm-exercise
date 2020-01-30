@@ -4,7 +4,9 @@ function init() {
         url: `http://dev-tcmws.tcm.com/tcmws/titles/${movie_id}`,
     }).done(function(data) {
         let title = data.tcm.title,
-            castMembers;
+            castMembers,
+            images,
+            defaultImage = title.profileImageUrl;
         console.log(data);
         $("#synopsis p").text(title.description);
         $("h1.title").text(title.name);
@@ -21,6 +23,21 @@ function init() {
         }
 
         $("header .image").css("background-image", `url(${title.profileImageUrl})`);
+
+        if (title.archives[0]) {
+            images = title.archives[0].images;
+            $("#photos_videos #main").css("background-image", `url(${images[0].url})`)
+            $("#photos_videos #top_left").css("background-image", `url(${images[1].url})`)
+            $("#photos_videos #top_right").css("background-image", `url(${images[2].url})`)
+            $("#photos_videos #bottom_left").css("background-image", `url(${images[3].url})`)
+            $("#photos_videos #bottom_right").css("background-image", `url(${images[4].url})`)
+        } else {
+            $("#photos_videos #main").css("background-image", `url(${defaultImage})`)
+            $("#photos_videos #top_left").css("background-image", `url(${defaultImage})`)
+            $("#photos_videos #top_right").css("background-image", `url(${defaultImage})`)
+            $("#photos_videos #bottom_left").css("background-image", `url(${defaultImage})`)
+            $("#photos_videos #bottom_right").css("background-image", `url(${defaultImage})`)
+        }
     })
 }
 
