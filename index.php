@@ -57,7 +57,7 @@
         <div>
             <h1 class="title white"></h1>
             <div class="emphasis"></div>
-            <h5 class="white"><span id="film_duration">1h 37m</span>|<span id="film_date">Aug 12, 1939</span>|<span class="film_rating">PG</span></h5>
+            <h5 class="white"><span id="film_duration"></span>|<span id="film_date"></span>|<span class="film_rating"></span></h5>
         </div>
         <div class="image"></div>
     </header>
@@ -115,7 +115,7 @@
                 <table>
                     <tr class="mpaa_rating">
                         <td>MPAA Rating</td>
-                        <td colspan="2"><span class="film_rating">PG</span></td>
+                        <td colspan="2"><span class="film_rating"></span></td>
                     </tr>
                     <tr class="genre">
                         <td>Genre</td>
