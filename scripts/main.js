@@ -38,7 +38,17 @@ function init() {
             $("#photos_videos #bottom_left").css("background-image", `url(${defaultImage})`)
             $("#photos_videos #bottom_right").css("background-image", `url(${defaultImage})`)
         }
-    })
+
+        if (title.mpaaRating) {
+            $(".film_rating").text(title.mpaaRating);
+        } else {
+            $(".film_rating").text('NR');
+        }
+
+        $("#film_date").text(title.releaseYear);
+
+        $("#film_duration").text(title.runtimeHours);
+    });
 }
 
 function getMovieID() {
