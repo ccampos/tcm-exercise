@@ -1,7 +1,7 @@
 function init() {
     let participant_id = getParticipantID();
     $.ajax({
-        url: `http://dev-tcmws.tcm.com/tcmws/titles/${participant_id}`,
+        url: `https://dev-tcmws.tcm.com/tcmws/titles/${participant_id}`,
     }).done(function(data) {
         let title = data.tcm.title,
             castMembers,

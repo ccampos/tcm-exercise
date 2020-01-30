@@ -1,7 +1,7 @@
 function init() {
     let movie_id = getMovieID();
     $.ajax({
-        url: `http://dev-tcmws.tcm.com/tcmws/titles/${movie_id}`,
+        url: `https://dev-tcmws.tcm.com/tcmws/titles/${movie_id}`,
     }).done(function(data) {
         let title = data.tcm.title,
             castMembers,
